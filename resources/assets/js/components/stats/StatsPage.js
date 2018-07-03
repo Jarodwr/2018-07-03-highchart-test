@@ -79,7 +79,7 @@ class StatsPage extends React.Component {
               },
               {
                 name: 'Maximum Profit Period',
-                data: priceData.slice(best.low[0], best.high[0]),
+                data: priceData.slice(best.low[0], best.high[0]+1),
                 enableMouseTracking: false,
                 color: '#ff0000'
               }
