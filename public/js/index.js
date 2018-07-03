@@ -43607,7 +43607,7 @@ var StatsPage = function (_React$Component) {
           if (current.profit > best.profit) {
             best.high = current.high;
             best.low = current.low;
-            best.profit = current.profit;
+            best.profit = +current.profit.toPrecision(10);
           }
         }
         _this2.setState({
